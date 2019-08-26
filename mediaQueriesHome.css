@@ -1,0 +1,426 @@
+@media only screen and (min-width: 640px) and (max-width: 1023px){
+			.grid-container{
+				display: grid;
+				grid-template-colums: 1fr;
+				grid-template-rows: 2fr 1fr 1.3fr 1.3fr 0.65fr 1.2fr 1.5fr 0.25fr 0.5fr 0.5fr 0.5fr; 
+				grid-gap: 0px;
+			}
+
+
+			/*beginpage*/
+			.box1{ 
+				grid-area: box1;
+				padding-top: 50px;
+				font-family: Rockwell;
+			/*	background-image: linear-gradient(to right, #fadceb, #e8e3e7); 
+			*/
+				background-image: linear-gradient(to bottom, #fadceb, white);
+				padding-left: 40px;
+				padding-right: 40px; 
+
+			}
+
+			/*biografie*/
+			.box2{
+				grid-area: box2;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			/*tijdlijn*/
+			.box3{
+				grid-area: box3;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			/*foto van mezelf*/
+			.box4{
+				grid-area: box4;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			/*portfolio intro*/
+			.box5{
+				grid-area: box5;
+				background-color: rgba(250, 220, 235, 0.3);
+				padding-left: 40px;
+				padding-right: 40px;
+
+			}
+
+			/*porfolio: fotografie*/
+			.box6{
+				grid-area: box6;
+				background-color: rgba(250, 220, 235, 0.3);
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			/*portfolio: dating app doice*/
+			.box7{
+				grid-area: box7;
+				background-color: rgba(250, 220, 235, 0.3);
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			/*contact titel*/
+			.box8{
+				grid-area: box8;
+				background-color: black;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			/*contact: mail*/
+			.box9{
+				grid-area: box9;
+				background-color: black;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			/*contact: linkedin*/
+			.box10{
+				grid-area: box10;
+				background-color: black;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			/*contact: school*/
+			.box11{
+				grid-area: box11;
+				background-color: black;
+				padding-bottom: 20px;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+			.grid-container{
+				display: grid;
+				grid-template-colums: 1fr 1fr 1fr;
+				grid-template-rows: 1fr 0.8fr 1.1fr 0.35fr 1fr 0.2fr 0.4fr; 
+				grid-gap: 0px;
+
+				grid-template-areas:
+					"box1 box1 box1"
+					"box2 box2 box4"
+					"box3 box3 box3"
+					"box5 box5 box5"
+					"box6 box7 box7"
+					"box8 box8 box8"
+					"box9 box10 box11";
+			}
+
+			.box1{ 
+				padding-top: 50px;
+				font-family: Rockwell;
+				background-image: linear-gradient(to bottom, #fadceb, white);
+				padding-left: 40px;
+				padding-right: 40px; 
+
+			}
+
+			.box2{
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			.box3{
+				padding-left: 40px;
+				padding-right: 40px;
+				margin-bottom: 60px;
+			}
+
+			.box4{
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			.box5{
+				background-color: rgba(250, 220, 235, 0.3);
+				padding-left: 40px;
+				padding-right: 40px;
+
+			}
+
+			.box6{
+				background-color: rgba(250, 220, 235, 0.3);
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			.box7{
+				background-color: rgba(250, 220, 235, 0.3);
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			.box8{
+				background-color: black;
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			.box9{
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			.box10{
+				margin-left: 0px;
+				margin-right: 0px;
+
+			}
+
+			.box11{
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			#titelBeginPage{
+				font-size: 60px;
+			}
+
+			#pBeginPage{
+				font-size: 25px;
+			}
+
+			h1{
+				font-size: 35px;
+				padding-bottom: 10px;
+			}
+
+			p{
+				font-size: 20px;
+			}
+
+			#logoHeader{
+				font-size: 20px;
+			}
+
+			#buttonContact{
+				margin-right: 10px;
+			}
+
+			.hPortfolio{
+				font-size: 25px;
+			}
+
+			.h2Contact{
+				padding-right: 10px;
+			}
+
+
+
+
+
+
+/*.tijdlijn {
+  	position: relative;
+  	max-width: 1200px;
+  	margin: 0 auto;
+}
+
+.tijdlijn::after {
+  	content: '';
+  	position: absolute;
+  	width: 6px;
+  	top: 0;
+  	bottom: 0;
+  	left: 50%;
+  	margin-left: -3px;
+}
+
+.container{
+	padding: 5px 30px;
+ 	position: relative;
+ 	width: 50%;
+}
+
+.container::after {
+  	content: '';
+  	position: absolute;
+  	width: 24px;
+  	height: 24px;
+  	right: -17px;
+  	top: 15px; 
+}
+
+.links {
+  left: 0;
+}
+
+.rechts {
+  left: 50%;
+}
+
+.links::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  right: 30px;
+}
+
+.rechts::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+
+}
+
+.rechts::after {
+  left: -16px;
+}
+
+.inhoud {
+  padding: 20px 30px;
+  position: relative;
+}*/
+
+  /*.links::after {
+    right: 50px;
+  }*/
+
+ /*.rechts {
+    left: 0%;
+  }*/
+
+ 
+
+/*.pTijdlijn{
+	font-size: 14px;
+}
+*/
+
+
+
+
+
+			/*degene v.d. site
+			*/
+
+
+			.tijdlijn {
+			  max-width: 1200px;
+			  margin: 0 auto;
+			}
+
+			/* The actual timeline (the vertical ruler) */
+			.tijdlijn::after {
+			  width: 6px;
+			  top: 0;
+			  bottom: 0;
+			  left: 50%;
+			  margin-left: -3px;
+			}
+
+			/* Container around content */
+			.container {
+			  padding: 10px 40px;
+			  width: 50%;
+			}
+
+			/* The circles on the timeline */
+			.container::after {
+			  top: 15px;
+			  top: 15px;
+			}
+
+			/* Place the container to the left */
+			.links {
+			  left: 0%;
+			}
+
+			/* Place the container to the right */
+			.rechts {
+			  left: 50%;
+			}
+
+			/* Add arrows to the left container (pointing right) */
+			.links::before {
+			  height: 0px;
+			  top: 18px;
+			  width: 0;
+			  z-index: 1;
+/*			  left: 560px;
+*/			  border-width: 15px 0 15px 15px;
+			  background-color: black;
+			}
+
+			/* Add arrows to the right container (pointing left) */
+			.rechts::before {
+			  height: 0px;
+			  top: 18px;
+			  width: 0;
+			  z-index: 1;
+			  left: 30px;
+			/*  border: medium solid white;
+			*/  border-width: 15px 15px 15px 0;
+			/*  border-color: transparent white transparent transparent;
+			*/}
+
+			/* Fix the circle for containers on the right side */
+			.rechts::after {
+			  left: -2.5%;
+			}
+
+			.links::after{
+				left: 97.5%;
+			}
+
+
+			/*.links::after{
+				left: -4px;
+			}*/
+
+			/* The actual content */
+			.inhoud {
+			  padding: 5% 10%;
+			}
+
+			#portret{
+				padding-top: 30px;
+			}
+
+			#school, #linkedIn{
+				padding-bottom: 20px;
+			}
+
+			.pTijdlijn{
+				font-size: 20px;
+			}
+
+			.hTijdlijn{
+				font-size: 22px;
+			}
+
+			/*#imgMail, #imgProfile, #imgSchool{
+				width: 54px;
+			}*/
+
+			.buttonGhost{
+				height: 40px;
+				width: 140px;
+				z-index: 10;
+				font-size: 20px;
+
+			}
+
+
+}
+
+
+

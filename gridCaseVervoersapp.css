@@ -1,0 +1,326 @@
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows:  0.45fr 0.4fr 0.2fr 1fr 1fr 0.4fr 0.1fr 0.2fr 0.2fr 0.2fr; 
+/*	height: 900px;
+*/	grid-gap: 0px;
+
+	grid-template-areas:
+		"box1"
+		"box22"
+		"box4"
+		"box5"
+		"box6"
+		"box3"
+		"box7"
+		"box8"
+		"box9"
+		"box10"
+}
+
+.box1{
+	grid-area: box1;
+/*	background-image: linear-gradient(to bottom, #fadceb, white); 
+*/
+	/*background-color: rgba(219, 219, 219, 0.3);*/
+	background-color: rgba(250, 220, 235, 0.3);
+}
+
+.box2{
+	grid-area: box2;
+}
+
+.box3{
+	grid-area: box3;
+	background-color: rgba(250, 220, 235, 0.3);
+	padding-top: 20px;
+}
+
+.box4{
+	grid-area: box4;
+/*	background-color: rgba(250, 220, 235, 0.3);
+*/}
+
+.box5{
+	grid-area: box5;
+/*	background-color: rgba(250, 220, 235, 0.3);
+*/}
+
+.box6{
+	grid-area: box6;
+	background-color: rgba(250, 220, 235, 0.3);
+}
+
+.box7{
+	grid-area: box7;
+	background-color: black;
+}
+
+.box8{
+	grid-area: box8;
+	background-color: black;
+}
+
+.box9{
+	grid-area: box9;
+	background-color: black;
+}
+
+.box10{
+	grid-area: box10;
+	background-color: black;
+	padding-bottom: 20px;
+}
+
+.box22{
+/*		background-color: rgba(219, 219, 219, 0.3);
+*/	grid-area: box22;
+	background-color: rgba(250, 220, 235, 0.3);}
+
+#herontwerpBeginFoto{
+		width: 200px;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 40px;
+}
+
+.pBeginPortfolioCase{
+	padding-top: 110px;
+}
+
+.hCases{
+		border-bottom: 2.5px solid #fadceb;
+		margin-bottom: 10px;
+	}
+
+nav{
+	 	z-index: 100;
+	 }
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1365px){
+	.grid-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 0.3fr 1.1fr 1fr 0.1fr 0.3fr; 
+		grid-gap: 0px;
+
+		grid-template-areas:
+			"box1 box1 box1 box22 box22 box22 box22"
+			"box4 box4 box5 box5 box5 box5 box5"
+			"box6 box6 box6 box6 box3 box3 box3"
+			"box7 box7 box7 box7 box7 box7 box7"
+			"box8 box8 box9 box9 box10 box10 box10";
+
+			/*"box1 box1 box1 box1 box1 box1"
+			"box6 box6 box6 box6 box3 box3"
+			"box4 box4 box5 box5 box5 box5"
+			"box7 box7 box7 box7 box7 box7"
+			"box8 box8 box9 box9 box10 box10";*/
+	}
+
+	/*.box2{
+		padding-left: 140px;
+	}*/
+
+	/*.box5{
+		padding-left: 20px;
+	}
+*/
+
+	.box22{
+		grid-area: box22;
+/*	background-color: rgba(219, 219, 219, 0.3);}
+*/	}
+
+	#herontwerpBeginFoto{
+		width: 200px;
+		margin-bottom: 15%;
+		margin-left:120px;
+		margin-top: 5%;
+	}
+
+	p{
+		font-size: 20px;
+	}
+
+	.buttonGhost{
+		width: 130px;
+		height: 40px;
+	}
+
+	/*#titelInleiding, #titelAanpak, #titelOntwerp{
+		font-size: 30px;
+	}*/
+
+	button a{
+		font-size: 20px;
+	}
+
+	.box4, .box3{
+		padding-right: 20px;
+	}
+
+	.box4, .box5{
+		padding-top: 20px;
+	}
+
+
+	.box1, .box4, .box6, .box7, .box5{
+		padding-left: 40px;
+	}
+
+	.box1, .box2, .box5, .box6{
+		padding-right: 40px;
+	}
+
+	.box6, .box3{
+		background-color: rgba(250, 220, 235, 0.3);
+	}
+
+	.box3{
+/*		background-image: linear-gradient(to bottom, #fadceb, white); 
+*/		padding-top: 70%;
+	}
+
+	.box6{
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.hCases{
+		padding-bottom: 10px;
+	}
+
+	#iconTechniek{
+		padding-bottom: 10px;
+	}
+
+	
+	.titelCase{
+		font-size: 65px;
+	}
+
+	.pBeginPortfolioCase{
+		font-size: 28px;
+		padding-top: -300px;
+	}
+
+	.hCases{
+		border-bottom: 2.5px solid #fadceb;
+		margin-bottom: 10px;
+	}
+
+	#pInleiding, .pAanpak{
+	text-align: left;
+	}
+
+	#logoHeader{
+		font-size: 18px;
+	}
+
+	#cssmenu > ul > li > a{
+		font-size: 18px;
+	}
+
+	.slideshow-container{
+		width: 50%;
+		padding-top: 20px;
+	}
+
+	nav{
+	 	z-index: 100;
+	 }
+}
+
+@media only screen and (min-width: 1366px){	
+.grid-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 0.5fr 0.7fr 1fr 0.1fr 0.3fr; 
+		grid-gap: 0px;
+
+		grid-template-areas:
+			"box1 box1 box1 box1 box22 box22 box22 box22 box22"
+			"box4 box4 box4 box5 box5 box5 box5 box5 box5"
+			"box6 box6 box6 box6 box6 box3 box3 box3 box3"
+			"box7 box7 box7 box7 box7 box7 box7 box7 box7"
+			"box8 box8 box8 box9 box9 box10 box10 box10 box10";
+
+			/*"box1 box1 box1 box1 box1 box1"
+			"box6 box6 box6 box6 box3 box3"
+			"box4 box4 box5 box5 box5 box5"
+			"box7 box7 box7 box7 box7 box7"
+			"box8 box8 box9 box9 box10 box10";*/
+	}
+
+	.box1, .box4, .box6, .box7, .box8{
+		padding-left: 150px;
+	}
+
+	.box1{
+		z-index: 20;
+	}
+
+	 nav{
+	 	z-index: 100;
+	 }
+
+	.box5, .box3, .box7, .box10{
+		padding-right: 150px;
+	}
+
+	.box22{
+		padding-right: 150px;
+	}
+
+	.box4, .box5{
+		padding-top: 40px;
+	}
+
+	.box3{
+		padding-top: 50%;
+	}
+
+	.titelCase{
+		font-size: 80px;
+	}
+
+	.pBeginPortfolioCase{
+		font-size: 25px;
+	}
+
+	.buttonGhost{
+		width: 140px;
+		height: 42px;
+	}
+
+	button a{
+		font-size: 18px;
+	}
+
+	#pInleiding, .pAanpak{
+		text-align: left;
+	}
+
+	#herontwerpBeginFoto{
+		width: 200px;
+		margin-bottom: 15%;
+		margin-left:150px;
+	}
+
+	#logoHeader{
+		font-size: 20px;
+	}
+
+	#herontwerpBeginFoto{
+		margin-top: 10%;
+		width: 300px;
+		padding-left: 80px;
+	}
+
+	.slideshow-container{
+		width: 50%;
+		padding-top: 20px;
+	}
+}

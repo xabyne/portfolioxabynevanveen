@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet");
+@import url("https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet");
+/*@import url("https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet");
+*/@import url("https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet");
+
+
+#pBeginPage{
+	padding-top: 120px;
+	padding-left: 10px;
+	font-family: Rockwell;
+}
+
+#titelBeginPage{
+	margin-top: 20px;
+	padding-left: 10px;
+
+}
+
+#pBio{
+	text-align: justify;
+}
+
+
+.hPortfolio{
+/*	margin-left: 10px;
+	margin-right: 10px;*/
+	padding-left: 10px;
+	font-family: Rockwell;
+	font-size: 20px;
+	border-bottom: 2.5px solid #fadceb;
+	margin-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#titelPortfolio{
+	margin-top: 40px;
+}
+
+#pUitlegPortfolio{
+	margin-bottom: 20px;
+}
+
+.pOnderschriftPortfolioWerk{
+	margin-bottom: 10px;
+}
+
+
+/*Begin animatie "XABYNE"
+*//*svg{
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	padding-top: 300px;
+	margin-left: 5px;
+}
+
+path{
+	stroke: #000;
+	fill: #000;
+	stroke-dasharray: 1800;
+	opacity: 10;
+	animation: animate 3s cubic-bezier(0, 0.18, 1, .1);
+	position: relative;
+}
+
+@keyframes animate{
+	0%{
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: 1800;
+	}
+	30%{
+		opacity: 5;
+		fill: none;
+		stroke-dashoffset: 1800;
+	}
+	90%{
+		fill: #ffffff;
+		opacity: 5;
+	}
+
+	100%{
+		opacity: 10;
+		fill: #ffffff;
+		stroke-dashoffset: 0;
+	}
+}*/
+/*Einde animatie "XABYNE"
+*/
+
+
+
+/*Begin Ghostbuttons
+*/
+
+.buttonGhost{
+	height: 30px;
+	width: 120px;
+	background-color: black;
+	color: black;
+	z-index: 10;
+	font-size: 15px;
+	border-radius: 5px;
+	font-family: 'Roboto Mono', monospace;
+	top: 0;
+	left: 0;
+	margin-top: 20px;
+}
+
+#buttonP{
+	margin-left: 15px;
+}
+
+#buttonB{
+	margin-left: 20px;
+}
+
+.buttonGhost:hover{
+	background-image: linear-gradient(to right, #fadceb, #ffe9f5); 
+	font-size: 18px;
+	text-decoration: bold;
+	transition: 1s;
+	border: black;
+}
+
+
+a{
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+	color: black;
+}
+
+nav a:before{
+content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a:hover:before{
+	/*text-decoration: underline;
+	transition: 1s;*/
+	visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/*Einde Ghostbuttons
+*/
+
+
+
+/*Begin tijdlijn biografie
+*/
+
+* {
+  box-sizing: border-box;
+}
+.tijdlijn {
+  	position: relative;
+  	max-width: 1200px;
+  	margin: 0 auto;
+  	margin-bottom: 40px;
+  	margin-top: 40px;
+}
+
+.tijdlijn::after {
+  	content: '';
+  	position: absolute;
+  	width: 6px;
+  	background-color: black;
+  	top: 0;
+  	bottom: 0;
+  	left: 26px;
+}
+
+.container {
+ 	position: relative;
+ 	width: 100%;
+  	padding-left: 70px;
+  	padding-right: 20px;
+}
+
+/*//rondjes op de tijdlijn
+*/.container::after {
+  	content: '';
+  	position: absolute;
+  	width: 24px;
+  	height: 24px;
+  	background-color: black;
+  	border: 2px solid black;
+  	top: 0px; /*als dat witte dingetje niet weggaat moet deze op 15 staan!!!!!!!!!!!!*/
+  	border-radius: 60%;
+  	z-index: 1;
+}
+
+.links::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 3px;
+  width: 0;
+  z-index: 1;
+  border: medium solid white;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent rgba(250, 220, 235, 0.2); transparent transparent;
+  left: 55px;
+}
+
+.rechts::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 3px;
+  width: 0;
+  z-index: 1;
+  left: 55px;
+  border: medium solid white;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent rgba(250, 220, 235, 0.2); transparent transparent;
+}
+
+
+.inhoud {
+  padding: 10px 20px;
+  background-color: rgba(250, 220, 235, 0.25);
+  position: relative;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+  .links::after, .rechts::after {
+    left: 15px;
+  }
+ 
+
+.pTijdlijn{
+	font-size: 14px;
+}
+
+/* Einde tijdlijn biografie
+*/
+
+#portret{
+	width: 310px;
+	display: block;
+	margin: 0 auto;
+}
+/*Portfolioplaatjes met hover
+*/
+.imageContainer {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.imgP {
+  display: block;
+  width: 90%;
+  grid-area: portfolio;
+  height: auto;
+  margin: 0px auto;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  margin: 0px auto;
+}
+
+
+.imageContainer:hover .label {
+  opacity: 0.7;
+}
+
+/*.imageContainer .label {
+  opacity: 0.3;
+}
+
+.tekstLabel{
+	opacity: 0;
+}
+
+.imageContainer:hover .label:hover{
+	opacity: 0.7;
+}
+*/
+.tekstLabel {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 1;
+  z-index: 2;
+}
+
+/*Einde portfolioplaatjes met hover
+*/
+
+
+/*Begin contact
+*/
+
+#titelContact{
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 20px
+}
+
+.contact{
+	background-color: black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#buttonContact{
+	height: 50px;
+	width: 170px;
+	background-color: transparent;
+	color: white;
+	font-size: 12px;
+	border-radius: 5px;
+	font-family: 'Roboto Mono', monospace;
+	margin-left: 115px;
+	padding: 0px;
+	transform: translateY(-32px);
+}
+
+.h2Contact{
+	color: white;
+	margin-left: 15px;
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace;
+	padding-top: 10px;
+	margin-bottom: 0px;
+	display: inline-bottom;
+}
+
+#contactHHS{
+	color: white;
+	padding-left: 105px;
+	margin-top: -35px;
+	padding-bottom: 20px;
+}
+
+.contactBorder{
+	border-color: white;
+	border-width:4px;  
+    border-style:double;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#linkedIn{
+	margin-bottom: 20px;
+}
+
+.pContact{
+	font-size: 14px;
+	margin-top: 0px;
+	color: white;
+}
+
+#imgSchool{
+	width: 75px;
+	display: inline-block;
+	margin-left: 25px;
+ 	vertical-align: text-top;
+ 	padding-top: 10px;
+ }
+
+#imgProfile{
+	width: 75px;
+	display: inline-block;
+	margin-left: 25px;
+ 	vertical-align: text-top;
+ 	padding-top: 10px;
+
+}
+
+#contactButton{
+	margin-bottom: 20px;
+}
+
+#imgMail{
+	width: 75px;
+	margin-left: 25px;
+ 	vertical-align: text-top;
+ 	padding-top: 10px;
+}
+
+#contactLinkedIn{
+	color: white;
+	padding-left: 105px;
+	margin-top: -55px;
+	padding-bottom: 20px;
+}
+
+/*Einde contacxt
+*/
+
+
+
+
+
+
+
+
